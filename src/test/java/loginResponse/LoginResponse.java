@@ -4,10 +4,7 @@ package loginResponse;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.Generated;
 
-
-@Generated("jsonschema2pojo")
 public class LoginResponse {
 
     @Override

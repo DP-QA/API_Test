@@ -1,14 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: Runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 0.401 s <<< FAILURE! - in Runner.TestRunner
-setUpCucumber(Runner.TestRunner)  Time elapsed: 0.29 s  <<< FAILURE!
-java.lang.NoClassDefFoundError: io/cucumber/stepexpression/TypeRegistry
-	at Runner.TestRunner.setUpCucumber(TestRunner.java:24)
-Caused by: java.lang.ClassNotFoundException: io.cucumber.stepexpression.TypeRegistry
-	at Runner.TestRunner.setUpCucumber(TestRunner.java:24)
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.198 s <<< FAILURE! - in Runner.TestRunner
+runScenario(Runner.TestRunner)  Time elapsed: 0.804 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<500>
 
-tearDownClass(Runner.TestRunner)  Time elapsed: 0.296 s  <<< FAILURE!
-java.lang.NullPointerException
-	at Runner.TestRunner.tearDownClass(TestRunner.java:38)
+runScenario(Runner.TestRunner)  Time elapsed: 0.25 s  <<< FAILURE!
+java.lang.AssertionError: expected:<200> but was:<500>
 

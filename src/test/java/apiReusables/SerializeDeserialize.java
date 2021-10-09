@@ -1,8 +1,9 @@
 package apiReusables;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import io.restassured.response.Response;
-
 import java.io.File;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import io.restassured.response.Response;
 
 public class SerializeDeserialize {
     public static Object deserialize(String jsonFile, Class className) {
