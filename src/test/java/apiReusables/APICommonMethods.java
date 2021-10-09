@@ -1,13 +1,14 @@
 package apiReusables;
 
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import org.json.JSONObject;
-
 
 import java.util.HashMap;
 import java.util.Map;
+
+import org.json.simple.JSONObject;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class APICommonMethods {
     public static Map<String,String> authentication  = new HashMap<String , String>();
