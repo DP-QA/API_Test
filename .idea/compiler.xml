@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="API_TestNG_CITIC" target="1.7" />
+      <module name="API_TestNG_CITIC" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,6 +1,6 @@
 package StepDefinition;
 
-import static org.junit.Assert.assertEquals;
+
 
 import java.util.HashMap;
 import java.util.List;
@@ -22,11 +22,12 @@ import loginResponse.LoginResponse;
 import requestPOJOs.LoginRequest;
 import requestPOJOs.Login_Token_Request;
 
+import static org.testng.Assert.assertEquals;
+
 public class LoginAPIStep {
 
 	Login_Token_Request tokenRequestBody = new Login_Token_Request();
 	APICommonMethods common = new APICommonMethods();
-
 	RequestSpecification request = null;
 	Response response = null;
 
@@ -48,29 +49,24 @@ public class LoginAPIStep {
 		}
 
 	}
-
 	@Given("resource as \"([^\"]*)\"$")
 	public void resource_as(String resourcePath) {
 		resource = resourcePath;
 
 	}
-
 	@When("I add the headers as")
 	public void i_add_the_headers_as(DataTable dataTable) {
 		request.headers(common.authentication);
-		List<List<String>> data = dataTable.asLists(String.class);
+		List<List<String>> data = dataTable.asLists();
 		Map<String, String> headers = new HashMap<>();
 		headers.put(data.get(1).get(0), data.get(1).get(1));
 		headers.put(data.get(2).get(0), data.get(2).get(1));
 		request.headers(headers);
 	}
-
 	@And("body as string {string}")
 	public void bodyAsString(String requestBody) throws Throwable {
 		request.body(requestBody);
-
 	}
-
 	@And("^send the Post Request$")
 	public void sendThePostRequest() {
 		response = request.post(resource);
@@ -78,7 +74,12 @@ public class LoginAPIStep {
 
 	@Then("^status code should be (\\d+)$")
 	public void statusCodeShouldBe(int statusCode) {
-		assertEquals(statusCode, response.getStatusCode());
+//		assertEquals(statusCode, response.getStatusCode());
+		assertEquals(response.getStatusCode(),statusCode);
+
+
+
+
 	}
 
 	@And("^I get the bearer token by joining the values path \"([^\"]*)\" and \"([^\"]*)\" with a space between them$")
@@ -94,20 +95,18 @@ public class LoginAPIStep {
 
 	@When("I set the headers as")
 	public void iSetTheHeadersAs(DataTable dataTable) {
-		List<List<String>> data = dataTable.asLists(String.class);
-
+		List<List<String>> data = dataTable.asLists();
 		Map<String, String> headers = new HashMap<String, String>();
-
 		headers.put(data.get(1).get(0), bearerToken);
 		headers.put(data.get(2).get(0), data.get(2).get(1));
 		headers.put(data.get(3).get(0), data.get(3).get(1));
-
 		request.headers(headers);
 	}
 
 	@And("^I send the Post request using the resuorce \"([^\"]*)\" and body with username \"([^\"]*)\" and password \"([^\"]*)\"$")
 	public void iSendThePostRequestUsingTheResuorceAndBodyWithUsernameAndPassword(String resource, String username,
-			String password) throws Throwable {
+			String password)
+	{
 		tokenRequestBody.setUsername(username);
 		tokenRequestBody.setPassword(password);
 		request.body(tokenRequestBody);

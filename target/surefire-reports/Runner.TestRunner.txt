@@ -1,10 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.011 s <<< FAILURE! - in Runner.TestRunner
-runScenario(Runner.TestRunner)  Time elapsed: 0.927 s  <<< FAILURE!
-java.lang.AssertionError: expected:<200> but was:<500>
-
-runScenario(Runner.TestRunner)  Time elapsed: 0.261 s  <<< FAILURE!
-java.lang.AssertionError: expected:<200> but was:<500>
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.244 s <<< FAILURE! - in Runner.TestRunner
+runScenario(Runner.TestRunner)  Time elapsed: 0.612 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [500]
 

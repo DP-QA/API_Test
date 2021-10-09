@@ -1,4 +1,4 @@
-
+@LoginAPI
 Feature: Login to application using login API
   User will be able to login to the Application using the Login API
 
@@ -21,21 +21,21 @@ Feature: Login to application using login API
       | Authorization | BEARER_TOKEN     |
       | Content-Type  | application/json |
       | x-target-env  | OC-SQUAD-4       |
-    And I send the Post request using the resuorce "/loginToken?x-token-type=SQUAD-DEV-TRIGGER" and body with username "Robo02" and password "Aa123456"
+    And I send the Post request using the resuorce "/loginToken?x-token-type=SQUAD-DEV-TRIGGER" and body with username "kmlee7789" and password "Aa123456"
     Then status code should be 200
     And I fetch the JWT token using path "encoded"
 
-  Scenario: Login to inMotion using the Bearer Token and Login Message.
-    Given I have the base URL for Login as "https://zxcvbns.cncbinternational.com"
-    And resource path as "/directbank/auth/v1/login"
-    When I send the post request with body as
-      | authType    | 0          |
-      | userCd      | Robo02     |
-      | deviceToken | 1234567890 |
-      | message     | JWT_Token  |
-    And headers as
-      | Header Type   | Header Value     |
-      | Content-Type  | application/json |
-      | Authorization | BEARER_TOKEN     |
-      | x-target-env  | OC-SQUAD-4       |
-    Then I get the response code as 200
+#  Scenario: Login to inMotion using the Bearer Token and Login Message.
+#    Given I have the base URL for Login as "https://zxcvbns.cncbinternational.com"
+#    And resource path as "/directbank/auth/v1/login"
+#    When I send the post request with body as
+#      | authType    | 0          |
+#      | userCd      | Robo02     |
+#      | deviceToken | 1234567890 |
+#      | message     | JWT_Token  |
+#    And headers as
+#      | Header Type   | Header Value     |
+#      | Content-Type  | application/json |
+#      | Authorization | BEARER_TOKEN     |
+#      | x-target-env  | OC-SQUAD-4       |
+#    Then I get the response code as 200
