@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-09T13:21:48 HKT" name="Surefire suite" finished-at="2021-10-09T13:21:54 HKT" duration-ms="5570">
+  <suite started-at="2021-10-09T13:24:50 HKT" name="Surefire suite" finished-at="2021-10-09T13:24:56 HKT" duration-ms="5341">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@1e67a849]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@36f0f1be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-10-09T13:21:48 HKT" name="Surefire test" finished-at="2021-10-09T13:21:54 HKT" duration-ms="5570">
+    <test started-at="2021-10-09T13:24:50 HKT" name="Surefire test" finished-at="2021-10-09T13:24:56 HKT" duration-ms="5341">
       <class name="Runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.TestRunner@1e67a849]" started-at="2021-10-09T13:21:48 HKT" name="setUpClass" finished-at="2021-10-09T13:21:49 HKT" duration-ms="478" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-09T13:24:50 HKT" name="setUpClass" finished-at="2021-10-09T13:24:51 HKT" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@1e67a849]" started-at="2021-10-09T13:21:49 HKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-09T13:21:53 HKT" duration-ms="3961" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-09T13:24:51 HKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-09T13:24:54 HKT" duration-ms="3586" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@1e67a849]" started-at="2021-10-09T13:21:53 HKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-09T13:21:53 HKT" duration-ms="799" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-09T13:24:54 HKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-09T13:24:55 HKT" duration-ms="925" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@ at ✽.status code should be 200(file:///F:/Project/API_Test/resources/features/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@1e67a849]" started-at="2021-10-09T13:21:53 HKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-09T13:21:54 HKT" duration-ms="251" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-09T13:24:55 HKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-09T13:24:55 HKT" duration-ms="264" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -94,7 +94,7 @@ at ✽.I get the response code as 200(file:///F:/Project/API_Test/resources/feat
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@1e67a849]" started-at="2021-10-09T13:21:54 HKT" name="tearDownClass" finished-at="2021-10-09T13:21:54 HKT" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-09T13:24:55 HKT" name="tearDownClass" finished-at="2021-10-09T13:24:56 HKT" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
