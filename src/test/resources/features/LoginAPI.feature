@@ -1,4 +1,4 @@
-@LoginAPI
+
 Feature: Login to application using login API
   User will be able to login to the Application using the Login API
 

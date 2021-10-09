@@ -65,7 +65,7 @@ public class LoginAPIStep {
         request.headers(headers);
     }
 
-    @And("body as string {string}")
+    @And("body as string \"([^\"]*)\"$")
     public void bodyAsString(String requestBody) throws Throwable {
         request.body(requestBody);
 
