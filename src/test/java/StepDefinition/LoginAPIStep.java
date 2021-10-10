@@ -2,6 +2,8 @@ package StepDefinition;
 
 
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -10,7 +12,6 @@ import apiReusables.APICommonMethods;
 import apiReusables.APIConstants;
 import apiReusables.SerializeDeserialize;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.PendingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -21,8 +22,6 @@ import io.restassured.specification.RequestSpecification;
 import loginResponse.LoginResponse;
 import requestPOJOs.LoginRequest;
 import requestPOJOs.Login_Token_Request;
-
-import static org.testng.Assert.assertEquals;
 
 public class LoginAPIStep {
 
@@ -95,7 +94,7 @@ public class LoginAPIStep {
 
 	@When("I set the headers as")
 	public void iSetTheHeadersAs(DataTable dataTable) {
-		List<List<String>> data = dataTable.asLists();
+		List<List<String>> data = dataTable.asLists(String.class);
 		Map<String, String> headers = new HashMap<String, String>();
 		headers.put(data.get(1).get(0), bearerToken);
 		headers.put(data.get(2).get(0), data.get(2).get(1));

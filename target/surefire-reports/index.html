@@ -24,22 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
               <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -103,8 +103,8 @@
                     </span>
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.TestRunner" hash-for-method="runScenario(&quot;Generate the Login message using the bearer token&quot;, &quot;Optional[Login to application using login API]...)">runScenario("Generate the Login message using the bearer token", "Optional[Login to application using login API]...)</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Generate the Login message using the bearer token&quot;, &quot;Optional[Login to application using login API]...)">runScenario("Generate the Login message using the bearer token", "Optional[Login to application using login API]...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -117,8 +117,8 @@
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="Runner.TestRunner" hash-for-method="runScenario(&quot;Generate the OAuth Token with the given Post API&quot;, &quot;Optional[Login to application using login API]&quot;)">runScenario("Generate the OAuth Token with the given Post API", "Optional[Login to application using login API]")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Generate the OAuth Token with the given Post API&quot;, &quot;Optional[Login to application using login API]&quot;)">runScenario("Generate the OAuth Token with the given Post API", "Optional[Login to application using login API]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -145,9 +145,9 @@
                   </a> <!-- runScenario("Generate the Login message using the bearer token", "Optional[Login to application using login API]...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Generate the Login message using the bearer token", "Optional[Login to application using login API]")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [500]
-	at StepDefinition.LoginAPIStep.statusCodeShouldBe(LoginAPIStep.java:78)
-	at ✽.status code should be 200(file:///Users/cncbiuser/Documents/API_Automation_TestNg/GIT_Repo_New/API_Test/src/test/resources/features/LoginAPI.feature:25)
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at StepDefinition.LoginAPIStep.statusCodeShouldBe(LoginAPIStep.java:77)
+	at ✽.status code should be 200(file:///F:/Project/API_Test/src/test/resources/features/LoginAPI.feature:25)
 ... Removed 6 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -182,8 +182,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Runner.TestRunner&quot;/&gt;
     &lt;/classes&gt;
@@ -237,16 +237,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runner.TestRunner')
-data.setCell(0, 3, 2027);
+data.setCell(0, 3, 3920);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Runner.TestRunner')
-data.setCell(1, 3, 617);
+data.setCell(1, 3, 828);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -279,17 +279,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Generate the OAuth Token with the given Post API", "Optional[Login to application using login API]")</span>
-                <span class="method-start">323 ms</span>
+                <span class="method-start">358 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Generate the Login message using the bearer token", "Optional[Login to application using login API]...)</span>
-                <span class="method-start">2351 ms</span>
+                <span class="method-start">4281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">2974 ms</span>
+                <span class="method-start">5115 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

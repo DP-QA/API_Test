@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="2995" started-at="2021-10-09T19:19:14 HKT" finished-at="2021-10-09T19:19:17 HKT">
+  <suite started-at="2021-10-10T15:08:30 HKT" name="Surefire suite" finished-at="2021-10-10T15:08:35 HKT" duration-ms="5150">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@544fe44c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@36f0f1be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="2995" started-at="2021-10-09T19:19:14 HKT" finished-at="2021-10-09T19:19:17 HKT">
+    <test started-at="2021-10-10T15:08:30 HKT" name="Surefire test" finished-at="2021-10-10T15:08:35 HKT" duration-ms="5150">
       <class name="Runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.TestRunner@544fe44c]" name="setUpClass" is-config="true" duration-ms="314" started-at="2021-10-09T19:19:14 HKT" finished-at="2021-10-09T19:19:15 HKT">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-10T15:08:30 HKT" name="setUpClass" finished-at="2021-10-10T15:08:31 HKT" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@544fe44c]" name="runScenario" duration-ms="2027" started-at="2021-10-09T19:19:15 HKT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-09T19:19:17 HKT">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-10T15:08:31 HKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T15:08:35 HKT" duration-ms="3920" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@544fe44c]" name="runScenario" duration-ms="617" started-at="2021-10-09T19:19:17 HKT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-09T19:19:17 HKT">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-10T15:08:35 HKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-10T15:08:35 HKT" duration-ms="828" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -45,25 +45,25 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [200] but found [500]]]>
+              <![CDATA[expected [200] but found [404]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [500]
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at org.testng.Assert.assertEquals(Assert.java:917)
-at StepDefinition.LoginAPIStep.statusCodeShouldBe(LoginAPIStep.java:78)
-at ✽.status code should be 200(file:///Users/cncbiuser/Documents/API_Automation_TestNg/GIT_Repo_New/API_Test/src/test/resources/features/LoginAPI.feature:25)
+at StepDefinition.LoginAPIStep.statusCodeShouldBe(LoginAPIStep.java:77)
+at ✽.status code should be 200(file:///F:/Project/API_Test/src/test/resources/features/LoginAPI.feature:25)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@544fe44c]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2021-10-09T19:19:17 HKT" finished-at="2021-10-09T19:19:17 HKT">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@36f0f1be]" started-at="2021-10-10T15:08:35 HKT" name="tearDownClass" finished-at="2021-10-10T15:08:35 HKT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
