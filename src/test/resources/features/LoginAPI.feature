@@ -20,7 +20,7 @@ Feature: Login to application using login API
       | Header Type   | Header Value     |
       | Authorization | BEARER_TOKEN     |
       | Content-Type  | application/json |
-      | x-target-env  | OC-FXONE       |
+      | x-target-env  | OC-SQUAD-4       |
     And I send the Post request using the resuorce "/loginToken?x-token-type=SQUAD-DEV-TRIGGER" and body with username "kmlee7789" and password "Aa123456"
     Then status code should be 200
     And I fetch the JWT token using path "encoded"
